@@ -1,0 +1,5 @@
+Flask==2.2.2
+google-cloud-aiplatform==1.25.0
+Werkzeug==2.3.8
+# google-api-python-client # (필요시 추가)
+# google-auth # (필요시 추가)
