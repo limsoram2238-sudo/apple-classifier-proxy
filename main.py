@@ -6,7 +6,7 @@ from google.cloud import aiplatform
 # --- 설정 (본인의 환경에 맞게 수정) ---
 PROJECT_ID =  "vision02" # 👈 본인의 GCP 프로젝트 ID
 LOCATION = "us-central1"           # 👈 Vertex AI Endpoint를 배포한 리전
-ENDPOINT_ID = "endpoint-id-here" # 👈 Vertex AI의 Endpoint ID
+ENDPOINT_ID = os.environ.get("ENDPOINT_ID") # 👈 Vertex AI의 Endpoint ID
 # ------------------------------------
 
 app = Flask(__name__)
